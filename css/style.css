@@ -1,0 +1,70 @@
+:root{
+    --headerfont: "Lobster", sans-serif;
+    --bodyfont: "Poppins", sans-serif;
+}
+
+body{
+    font-family: var(--bodyfont);
+    background-color: #FFF9BF;
+    color: #1A1A1D;
+}
+
+h1{
+    font-family: var(--headerfont);
+    font-size: 3rem;
+    
+}
+.sub-title{
+    background-image: linear-gradient(to right,#FEEC37, #1A1A1D);
+    color: transparent;
+    background-clip: text;
+}
+input:focus{
+    outline: none !important;
+    color: #1A1A1D;
+}
+
+::selection{
+    background-color: #1A1A1D;
+    color: #FFF9BF;
+}
+
+.visit{
+    color: #1A1A1D;
+    background-color: #e5db80;
+    border-radius: 16px;
+    padding: 4px 8px;
+}
+.delete{
+    color: #FFF9BF;
+    background-color: #771515;
+    border-radius: 16px;
+    padding: 4px 8px;
+}
+
+.alert-window{
+    background-color: aliceblue;
+    box-shadow: #1A1A1D;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 16px;
+    padding: 16px 24px;
+    z-index: 2;
+}
+.alert-window i{
+    font-size: 2 rem;
+    top:40px;
+    right: 40px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(26, 26, 29,0.7);
+    z-index: 1;
+}
